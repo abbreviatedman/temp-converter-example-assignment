@@ -7,7 +7,7 @@
 // console.log(answer);
 
 function removeSpaces(userInput) {
-  return userInput.trim()
+  return userInput.replaceAll(" ", "");
 }
 
 function getMeasurement(userInput) {
@@ -15,6 +15,6 @@ function getMeasurement(userInput) {
 }
 
 function getDegrees(userInput) {
-  return Number(userInput.slice(0, 2));
+  return Number(userInput.slice(0, -1));
 }
 
